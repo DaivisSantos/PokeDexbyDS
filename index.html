@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokédex</title>
+    <link rel="icon" href="./Fotos/cinema.png">
+    <link rel="stylesheet" href="./Gidole-Regular.ttf">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap">
+    <link rel="stylesheet" href="./styles/reset.css">
+    <link rel="stylesheet" href="./styles/style.css">
+    <script defer src="https://kit.fontawesome.com/bf0ef7d0c3.js" crossorigin="anonymous"></script>
+    <script defer src="./JS/main.js" type="module"></script>
+</head>
+<body>    
+    <main class="pokedex">
+        <section  class="header">
+            <div>
+                <h2 id="pokemonName"></h2>
+                <p id="pokemonType" data-tipo>electric</p>
+            </div>
+                <h2 class="number" data-id>Number: #<span id="pokemonNumber"></span></h2>
+        </section>
+<!-- ---------------------------------------- -->
+        <section class="poke_img">
+            <img id="pokemonImage" src="#" alt="Imagem pokemon" data-img>
+            <input type="text" id="inputSearch" placeholder="Name or Number">
+            <div id="error-message" style="color: red;"></div>
+        </section>
+<!-- ---------------------------------------- -->
+        <section class="status">
+            <ul id="pokemonStats" data-lista>
+                <li class="hp"></li>
+                <li class="atk"></li>
+                <li class="def"></li>
+                <li class="satk"></li>
+                <li class="sdef"></li>
+                <li class="speed"></li>
+            </ul>
+        </section>
+    </main>
+</body>
+</html>

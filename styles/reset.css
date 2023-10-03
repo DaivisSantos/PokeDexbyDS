@@ -1,0 +1,47 @@
+/* Reset CSS */
+
+/* Remover margens e preenchimentos padrão */
+html, body, div, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, figure, footer, header, hgroup, menu, nav, section, time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font: inherit;
+    vertical-align: baseline;
+  }
+  
+  /* Corrigir font-size em elementos HTML5 para tipografia mais consistente */
+  article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+    display: block;
+  }
+  
+  /* Remover estilo de lista e remover margens / preenchimento de lista */
+  ol, ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Definir estilos padrão para elementos de link */
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  /* Definir estilo padrão para elementos de foco */
+  a:focus {
+    outline: none;
+  }
+  
+  /* Corrigir quebras de linha em imagens incorporadas */
+  img {
+    max-width: 100%;
+    height: auto;
+    border: 0;
+  }
+  
+  /* Adicionar outras regras de redefinição aqui, se necessário */
+  /* Adicionar um box-sizing padrão para borda da caixa */
+  *, *::before, *::after {
+    box-sizing: border-box;
+  }
+  

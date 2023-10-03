@@ -1,0 +1,125 @@
+$font-padrao: 2em;
+$cor-texto: rgb(224, 216, 216);
+
+
+
+body {
+    text-align: center;
+    height: 100%;
+  
+    main {
+      height: 100vh;
+      background: #101022;
+      display: grid;
+      grid-template-rows: 0.5fr 2fr 2fr;
+  
+      .header {
+        display: flex;
+        justify-content: space-between;
+        font-family: 'Gidole Regular', sans-serif;
+        font-weight: bold;
+        font-size: calc($font-padrao / 1.5);
+        color: $cor-texto;
+        padding: 0.5em;
+        background-color: #222235;
+        flex-grow: 1;
+  
+        div {
+          display: flex;
+          flex-direction: column;
+          justify-content: flex-start;
+  
+          p {
+            border: 2px solid #101022;
+            border-radius: 25px;
+            color: #101022;
+          }
+        }
+      }
+  
+      .poke_img {
+        background-color: #222235;
+        border-radius: 0% 0% 45% 45%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 1em;
+  
+        img {
+          max-width: 250%;
+          flex-grow: 3;
+          background: linear-gradient(to bottom, #101022 50%, rgb(114, 96, 96) 50%);
+          border-radius: 40%;
+          padding: 30px;
+          box-shadow: 2px 2px 10px 2px rgb(0, 0, 0, 255);
+          transition: 2s, ease-in;
+        }
+  
+        input {
+          max-width: 250%;
+          padding: 0.2px 15%;
+          border-radius: 25px;
+          border: 2px solid black;
+          background: linear-gradient(to right, #101022, #18181d);
+          flex-grow: 1;
+          color: $cor-texto;
+          transition: 2s ease-in-out;
+          justify-content: center;
+          text-align: center;
+  
+          &:hover {
+            background: $cor-texto;
+            color: #101022;
+            transition: 2s ease-in-out;
+          }
+        }
+      }
+  
+      .status {
+        ul {
+          display: flex;
+          font-family: 'Poppins', sans-serif;
+          flex-direction: column;
+          justify-content: left;
+          white-space: nowrap;
+          color: $cor-texto;
+          margin: 0.5em;
+          font-size: calc($font-padrao / 1.5);
+          gap: 0.3em;
+  
+          li {
+            display: inline-flex;
+            border: 2px solid black;
+            border-radius: 25px;
+            padding: 0.5em 1em;
+  
+            &.hp {
+              background: linear-gradient(to right, #101022, #008000);
+            }
+  
+            &.atk {
+              background: linear-gradient(to right, #101022, #FF0000);
+            }
+  
+            &.def {
+              background: linear-gradient(to right, #101022, #ADD8E6);
+            }
+  
+            &.satk {
+              background: linear-gradient(to right, #101022, #800080);
+            }
+  
+            &.sdef {
+              background: linear-gradient(to right, #101022, #8A2BE2);
+            }
+  
+            &.speed {
+              background: linear-gradient(to right, #101022, #FFFF00);
+            }
+          }
+        }
+      }
+    }
+  }
+  
