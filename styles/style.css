@@ -71,15 +71,13 @@ body main .status ul {
   justify-content: left;
   white-space: nowrap;
   color: rgb(224, 216, 216);
-  margin: 0.5em;
-  font-size: 1.3333333333em;
-  gap: 0.3em;
+  font-size: 1em;
+  gap: 0em;
+  width: 100%;
 }
 body main .status ul li {
-  display: inline-flex;
-  border: 2px solid black;
-  border-radius: 25px;
-  padding: 0.5em 1em;
+  width: 98%;
+  padding: 0.5em 0em;
 }
 body main .status ul li.hp {
   background: linear-gradient(to right, #101022, #008000);

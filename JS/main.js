@@ -61,7 +61,6 @@ const mostrarPokemon = async (pokemon) => {
             const StatsNumb = stat.base_stat;
             
             pokemonStatsList[index].innerHTML = `${NomeStats}: <span>${StatsNumb}</span>`;
-            pokemonStatsList[index].style.paddingRight = StatsNumb + "%";
         });
 
         document.getElementById('error-message').textContent = '';
