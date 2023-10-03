@@ -67,7 +67,7 @@ body {
           transition: 2s ease-in-out;
           justify-content: center;
           text-align: center;
-  
+            transform: to-lower-case($string: "");
           &:hover {
             background: $cor-texto;
             color: #101022;

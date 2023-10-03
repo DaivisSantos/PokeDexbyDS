@@ -75,12 +75,18 @@ const mostrarPokemon = async (pokemon) => {
 const form = document.getElementsByClassName('poke_img');
 const inputSearch = document.getElementById('inputSearch');
 
+inputSearch.addEventListener('input', evento => {
+    // Converte o valor para letras minúsculas
+    evento.target.value = evento.target.value.toLowerCase();
+});
+
 inputSearch.addEventListener('keydown', evento => {
-    if(evento.key == 'Enter'){
+    if (evento.key == 'Enter') {
         evento.preventDefault();
         let namePok = evento.target.value;
         mostrarPokemon(`${namePok}`);
     }
 });
+
 
 mostrarPokemon('25');

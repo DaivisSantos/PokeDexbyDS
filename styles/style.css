@@ -58,6 +58,7 @@ body main .poke_img input {
   transition: 2s ease-in-out;
   justify-content: center;
   text-align: center;
+  transform: "";
 }
 body main .poke_img input:hover {
   background: rgb(224, 216, 216);
